@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - Hospital Management System</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <img src="images/hospital-logo.svg" alt="Hospital Logo">
+                    <h2>MediCare</h2>
+                </div>
+                <button class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="doctor-profile">
+                <div class="doctor-avatar">
+                    <img src="images/doctors/doctor-1.jpg" alt="Doctor Avatar">
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. John Smith</h3>
+                    <p>Cardiology</p>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="doctor-dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doctor-appointments.html">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doctor-patients.html">
+                            <i class="fas fa-user-injured"></i>
+                            <span>My Patients</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doctor-schedule.html">
+                            <i class="fas fa-clock"></i>
+                            <span>Schedule</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doctor-profile.html">
+                            <i class="fas fa-user-md"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doctor-settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="logout">
+                        <a href="#" id="logoutBtn">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="page-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="top-bar-right">
+                    <div class="availability-toggle">
+                        <span>Available</span>
+                        <label class="switch">
+                            <input type="checkbox" id="availabilityToggle" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="notifications">
+                        <button class="notification-btn">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge">3</span>
+                        </button>
+                        <div class="notification-dropdown">
+                            <div class="notification-header">
+                                <h3>Notifications</h3>
+                                <a href="#">Mark all as read</a>
+                            </div>
+                            <ul class="notification-list">
+                                <li class="unread">
+                                    <div class="notification-icon">
+                                        <i class="fas fa-calendar-plus"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <p>New appointment scheduled with <strong>James Wilson</strong></p>
+                                        <span class="time">10 minutes ago</span>
+                                    </div>
+                                </li>
+                                <li class="unread">
+                                    <div class="notification-icon">
+                                        <i class="fas fa-calendar-times"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <p><strong>Emma Thompson</strong> cancelled her appointment</p>
+                                        <span class="time">1 hour ago</span>
+                                    </div>
+                                </li>
+                                <li class="unread">
+                                    <div class="notification-icon">
+                                        <i class="fas fa-comment-medical"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <p>New message from <strong>Admin</strong></p>
+                                        <span class="time">3 hours ago</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="notification-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div class="notification-content">
+                                        <p>Your schedule for next week has been updated</p>
+                                        <span class="time">Yesterday</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="notification-footer">
+                                <a href="notifications.html">View all notifications</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-menu">
+                        <button class="user-menu-btn">
+                            <img src="images/doctors/doctor-1.jpg" alt="Doctor Avatar">
+                            <span>Dr. John Smith</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="user-dropdown">
+                            <ul>
+                                <li>
+                                    <a href="doctor-profile.html">
+                                        <i class="fas fa-user"></i>
+                                        <span>My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="doctor-settings.html">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="userMenuLogout">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Stats Cards -->
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                            <h3>Today's Appointments</h3>
+                            <div class="stat-number">8</div>
+                        </div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                            <h3>Total Patients</h3>
+                            <div class="stat-number">142</div>
+                        </div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                            <h3>This Week</h3>
+                            <div class="stat-number">32</div>
+                        </div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-calendar-week"></i>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                            <h3>Pending Reports</h3>
+                            <div class="stat-number">5</div>
+                        </div>
+                        <div class="stat-card-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Appointments -->
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h2>Today's Appointments</h2>
+                        <div class="card-actions">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-filter"></i>
+                                <span>Filter</span>
+                            </button>
+                            <a href="doctor-appointments.html" class="btn btn-primary btn-sm">
+                                <span>View All</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Patient</th>
+                                        <th>Time</th>
+                                        <th>Contact</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="patient-info">
+                                                <img src="images/patients/patient-1.jpg" alt="Patient">
+                                                <div>
+                                                    <h4>James Wilson</h4>
+                                                    <p>ID: P-0001</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>09:00 AM</td>
+                                        <td>+1 (555) 987-6543</td>
+                                        <td><span class="status upcoming">Upcoming</span></td>
+                                        <td>
+                                            <div class="actions">
+                                                <button class="action-btn view-btn" title="View Details">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="action-btn edit-btn" title="Edit">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="action-btn cancel-btn" title="Cancel">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="patient-info">
+                                                <img src="images/patients/patient-2.jpg" alt="Patient">
+                                                <div>
+                                                    <h4>Maria Garcia</h4>
+                                                    <p>ID: P-0042</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10:30 AM</td>
+                                        <td>+1 (555) 234-5678</td>
+                                        <td><span class="status confirmed">Confirmed</span></td>
+                                        <td>
+                                            <div class="actions">
+                                                <button class="action-btn view-btn" title="View Details">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="action-btn edit-btn" title="Edit">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="action-btn cancel-btn" title="Cancel">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="patient-info">
+                                                <img src="images/patients/patient-3.jpg" alt="Patient">
+                                                <div>
+                                                    <h4>Robert Johnson</h4>
+                                                    <p>ID: P-0078</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>01:00 PM</td>
+                                        <td>+1 (555) 876-5432</td>
+                                        <td><span class="status confirmed">Confirmed</span></td>
+                                        <td>
+                                            <div class="actions">
+                                                <button class="action-btn view-btn" title="View Details">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="action-btn edit-btn" title="Edit">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="action-btn cancel-btn" title="Cancel">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="patient-info">
+                                                <img src="images/patients/patient-4.jpg" alt="Patient">
+                                                <div>
+                                                    <h4>Lisa Chen</h4>
+                                                    <p>ID: P-0125</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>03:30 PM</td>
+                                        <td>+1 (555) 345-6789</td>
+                                        <td><span class="status confirmed">Confirmed</span></td>
+                                        <td>
+                                            <div class="actions">
+                                                <button class="action-btn view-btn" title="View Details">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="action-btn edit-btn" title="Edit">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="action-btn cancel-btn" title="Cancel">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="patient-info">
+                                                <img src="images/patients/patient-5.jpg" alt="Patient">
+                                                <div>
+                                                    <h4>David Brown</h4>
+                                                    <p>ID: P-0189</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>05:00 PM</td>
+                                        <td>+1 (555) 456-7890</td>
+                                        <td><span class="status upcoming">Upcoming</span></td>
+                                        <td>
+                                            <div class="actions">
+                                                <button class="action-btn view-btn" title="View Details">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="action-btn edit-btn" title="Edit">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="action-btn cancel-btn" title="Cancel">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule and Recent Patients -->
+                <div class="dashboard-row">
+                    <!-- Weekly Schedule -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h2>Weekly Schedule</h2>
+                            <div class="card-actions">
+                                <a href="doctor-schedule.html" class="btn btn-primary btn-sm">
+                                    <span>Manage Schedule</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="schedule-calendar">
+                                <div class="schedule-day">
+                                    <div class="day-header">
+                                        <h4>Monday</h4>
+                                        <p>Jul 24</p>
+                                    </div>
+                                    <div class="day-slots">
+                                        <div class="time-slot booked">
+                                            <span class="time">09:00 - 10:00</span>
+                                            <span class="status">Booked</span>
+                                        </div>
+                                        <div class="time-slot booked">
+                                            <span class="time">10:30 - 11:30</span>
+                                            <span class="status">Booked</span>
+                                        </div>
+                                        <div class="time-slot available">
+                                            <span class="time">01:00 - 02:00</span>
+                                            <span class="status">Available</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-day">
+                                    <div class="day-header">
+                                        <h4>Tuesday</h4>
+                                        <p>Jul 25</p>
+                                    </div>
+                                    <div class="day-slots">
+                                        <div class="time-slot booked">
+                                            <span class="time">09:00 - 10:00</span>
+                                            <span class="status">Booked</span>
+                                        </div>
+                                        <div class="time-slot available">
+                                            <span class="time">10:30 - 11:30</span>
+                                            <span class="status">Available</span>
+                                        </div>
+                                        <div class="time-slot booked">
+                                            <span class="time">01:00 - 02:00</span>
+                                            <span class="status">Booked</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="schedule-day">
+                                    <div class="day-header">
+                                        <h4>Wednesday</h4>
+                                        <p>Jul 26</p>
+                                    </div>
+                                    <div class="day-slots">
+                                        <div class="time-slot unavailable">
+                                            <span class="time">09:00 - 10:00</span>
+                                            <span class="status">Unavailable</span>
+                                        </div>
+                                        <div class="time-slot unavailable">
+                                            <span class="time">10:30 - 11:30</span>
+                                            <span class="status">Unavailable</span>
+                                        </div>
+                                        <div class="time-slot unavailable">
+                                            <span class="time">01:00 - 02:00</span>
+                                            <span class="status">Unavailable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="leave-request">
+                                <button class="btn btn-outline btn-block">
+                                    <i class="fas fa-calendar-minus"></i>
+                                    <span>Request Leave</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Patients -->
+                    <div class="dashboard-card">
+                        <div class="card-header">
+                            <h2>Recent Patients</h2>
+                            <div class="card-actions">
+                                <a href="doctor-patients.html" class="btn btn-primary btn-sm">
+                                    <span>View All</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="patient-list">
+                                <li class="patient-item">
+                                    <div class="patient-info">
+                                        <img src="images/patients/patient-1.jpg" alt="Patient">
+                                        <div>
+                                            <h4>James Wilson</h4>
+                                            <p>Last Visit: Today</p>
+                                        </div>
+                                    </div>
+                                    <div class="patient-actions">
+                                        <button class="btn btn-sm btn-outline">
+                                            <i class="fas fa-file-medical"></i>
+                                            <span>Records</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="patient-item">
+                                    <div class="patient-info">
+                                        <img src="images/patients/patient-2.jpg" alt="Patient">
+                                        <div>
+                                            <h4>Maria Garcia</h4>
+                                            <p>Last Visit: Today</p>
+                                        </div>
+                                    </div>
+                                    <div class="patient-actions">
+                                        <button class="btn btn-sm btn-outline">
+                                            <i class="fas fa-file-medical"></i>
+                                            <span>Records</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="patient-item">
+                                    <div class="patient-info">
+                                        <img src="images/patients/patient-6.jpg" alt="Patient">
+                                        <div>
+                                            <h4>Thomas Anderson</h4>
+                                            <p>Last Visit: Yesterday</p>
+                                        </div>
+                                    </div>
+                                    <div class="patient-actions">
+                                        <button class="btn btn-sm btn-outline">
+                                            <i class="fas fa-file-medical"></i>
+                                            <span>Records</span>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="patient-item">
+                                    <div class="patient-info">
+                                        <img src="images/patients/patient-7.jpg" alt="Patient">
+                                        <div>
+                                            <h4>Sarah Miller</h4>
+                                            <p>Last Visit: Jul 20, 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="patient-actions">
+                                        <button class="btn btn-sm btn-outline">
+                                            <i class="fas fa-file-medical"></i>
+                                            <span>Records</span>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Confirm Logout</h2>
+            <p>Are you sure you want to logout?</p>
+            <div class="modal-actions">
+                <button id="cancelLogout" class="btn btn-outline">Cancel</button>
+                <button id="confirmLogout" class="btn btn-primary">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

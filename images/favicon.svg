@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Hospital Favicon -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .white { fill: #ffffff; }
+  </style>
+  
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="16" class="primary" />
+  
+  <!-- Hospital Cross -->
+  <rect x="9" y="14" width="14" height="4" rx="1" class="white" />
+  <rect x="14" y="9" width="4" height="14" rx="1" class="white" />
+</svg>

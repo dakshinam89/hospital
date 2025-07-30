@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- Why Choose Us Illustration -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .primary-light { fill: #e8f0fe; }
+    .secondary { fill: #34a853; }
+    .secondary-light { fill: #e6f4ea; }
+    .accent { fill: #fbbc04; }
+    .accent-light { fill: #fef7e0; }
+    .error { fill: #ea4335; }
+    .error-light { fill: #fcebe9; }
+    .dark { fill: #202124; }
+    .medium { fill: #5f6368; }
+    .light { fill: #f8f9fa; }
+    .white { fill: #ffffff; }
+    .outline { fill: none; stroke: #dadce0; stroke-width: 2; }
+  </style>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="600" height="400" fill="none" />
+  
+  <!-- Trusted Doctors Section -->
+  <g transform="translate(100, 100)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="primary-light" />
+    
+    <!-- Doctor Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Stethoscope -->
+      <path d="M30,20 C30,15 35,10 40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 C35,40 30,35 30,30 L30,25" stroke="#1a73e8" stroke-width="3" fill="none" />
+      <circle cx="25" cy="25" r="5" class="primary" />
+      
+      <!-- Doctor Head -->
+      <circle cx="25" cy="15" r="10" fill="#fce8d6" />
+      
+      <!-- Doctor Coat -->
+      <path d="M15,25 L15,50 L35,50 L35,25 C35,25 30,30 25,30 C20,30 15,25 15,25 Z" class="white" stroke="#dadce0" stroke-width="1" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" class="dark">Trusted Doctors</text>
+  </g>
+  
+  <!-- Instant Booking Section -->
+  <g transform="translate(250, 100)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="secondary-light" />
+    
+    <!-- Booking Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Calendar -->
+      <rect x="10" y="10" width="30" height="30" rx="2" class="white" stroke="#34a853" stroke-width="2" />
+      <line x1="10" y1="20" x2="40" y2="20" stroke="#34a853" stroke-width="2" />
+      <line x1="20" y1="10" x2="20" y2="5" stroke="#34a853" stroke-width="2" />
+      <line x1="30" y1="10" x2="30" y2="5" stroke="#34a853" stroke-width="2" />
+      
+      <!-- Checkmark -->
+      <path d="M20,30 L25,35 L35,25" stroke="#34a853" stroke-width="2" fill="none" />
+      
+      <!-- SMS Notification -->
+      <rect x="30" y="25" width="15" height="10" rx="2" class="secondary" />
+      <circle cx="45" cy="30" r="5" class="secondary" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" class="dark">Instant Booking</text>
+  </g>
+  
+  <!-- Simple Interface Section -->
+  <g transform="translate(400, 100)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="accent-light" />
+    
+    <!-- Interface Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Computer Screen -->
+      <rect x="5" y="5" width="40" height="30" rx="2" class="white" stroke="#fbbc04" stroke-width="2" />
+      <rect x="10" y="10" width="30" height="5" rx="1" class="accent" />
+      <rect x="10" y="20" width="20" height="3" rx="1" class="accent" />
+      <rect x="10" y="25" width="15" height="3" rx="1" class="accent" />
+      
+      <!-- Stand -->
+      <path d="M20,35 L30,35 L35,45 L15,45" class="accent" />
+      <rect x="15" y="45" width="20" height="2" rx="1" class="accent" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" class="dark">Simple Interface</text>
+  </g>
+  
+  <!-- Mobile Friendly Section -->
+  <g transform="translate(100, 250)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="error-light" />
+    
+    <!-- Mobile Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Phone -->
+      <rect x="15" y="5" width="20" height="40" rx="3" class="white" stroke="#ea4335" stroke-width="2" />
+      <rect x="17" y="8" width="16" height="30" rx="1" class="error-light" />
+      <circle cx="25" cy="42" r="2" class="error" />
+      
+      <!-- Responsive Elements -->
+      <rect x="20" y="12" width="10" height="2" rx="1" class="error" />
+      <rect x="20" y="16" width="10" height="2" rx="1" class="error" />
+      <rect x="20" y="20" width="10" height="2" rx="1" class="error" />
+      <rect x="20" y="28" width="10" height="6" rx="1" class="error" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" class="dark">Mobile Friendly</text>
+  </g>
+  
+  <!-- 24/7 Support Section -->
+  <g transform="translate(250, 250)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="primary-light" />
+    
+    <!-- Support Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Clock -->
+      <circle cx="25" cy="25" r="20" class="white" stroke="#1a73e8" stroke-width="2" />
+      <line x1="25" y1="25" x2="25" y2="15" stroke="#1a73e8" stroke-width="2" />
+      <line x1="25" y1="25" x2="35" y2="25" stroke="#1a73e8" stroke-width="2" />
+      
+      <!-- 24/7 Text -->
+      <text x="25" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" class="primary">24/7</text>
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" class="dark">24/7 Support</text>
+  </g>
+  
+  <!-- Affordable Prices Section -->
+  <g transform="translate(400, 250)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="secondary-light" />
+    
+    <!-- Price Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Dollar Sign -->
+      <circle cx="25" cy="25" r="20" class="white" stroke="#34a853" stroke-width="2" />
+      <path d="M25,15 L25,35 M20,20 L30,20 C33,20 33,30 30,30 L20,30" stroke="#34a853" stroke-width="2" fill="none" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" class="dark">Affordable Prices</text>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <g stroke="#dadce0" stroke-width="1" stroke-dasharray="5,5">
+    <line x1="150" y1="100" x2="250" y2="100" />
+    <line x1="350" y1="100" x2="400" y2="100" />
+    <line x1="150" y1="250" x2="250" y2="250" />
+    <line x1="350" y1="250" x2="400" y2="250" />
+    <line x1="100" y1="150" x2="100" y2="250" />
+    <line x1="300" y1="150" x2="300" y2="250" />
+    <line x1="450" y1="150" x2="450" y2="250" />
+  </g>
+</svg>

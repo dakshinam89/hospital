@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Admin Avatar -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .secondary { fill: #34a853; }
+    .background { fill: #e8f0fe; }
+    .face { fill: #fce8d6; }
+    .suit { fill: #202124; }
+    .shirt { fill: #ffffff; }
+    .tie { fill: #ea4335; }
+    .hair { fill: #5f6368; }
+  </style>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" class="background" />
+  
+  <!-- Suit -->
+  <path d="M60,90 L60,200 L140,200 L140,90 C140,90 130,110 100,110 C70,110 60,90 60,90 Z" class="suit" />
+  
+  <!-- Shirt -->
+  <path d="M75,90 L75,200 L125,200 L125,90 C125,90 115,105 100,105 C85,105 75,90 75,90 Z" class="shirt" />
+  
+  <!-- Tie -->
+  <path d="M95,90 L105,90 L107,110 L100,120 L93,110 Z" class="tie" />
+  <path d="M100,120 L93,110 L93,140 L100,150 L107,140 L107,110 Z" class="tie" />
+  
+  <!-- Face -->
+  <circle cx="100" cy="70" r="40" class="face" />
+  
+  <!-- Hair -->
+  <path d="M60,70 C60,45 80,30 100,30 C120,30 140,45 140,70 C140,70 140,55 100,55 C60,55 60,70 60,70 Z" class="hair" />
+  
+  <!-- Eyes -->
+  <ellipse cx="85" cy="65" rx="5" ry="3" fill="#333" />
+  <ellipse cx="115" cy="65" rx="5" ry="3" fill="#333" />
+  
+  <!-- Smile -->
+  <path d="M85,80 C85,90 115,90 115,80" stroke="#333" stroke-width="2" fill="none" />
+  
+  <!-- Admin Badge -->
+  <circle cx="140" cy="50" r="15" class="primary" />
+  <text x="140" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">A</text>
+</svg>

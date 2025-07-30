@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | MediCare Hospital</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header-fix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Feedback Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Your Feedback Matters</h1>
+                    <p>Help us improve our services by sharing your experience with MediCare Hospital</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Introduction Section -->
+        <section class="feedback-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Why Your Feedback Is Important</h2>
+                        <p>At MediCare Hospital, we are committed to providing exceptional healthcare services. Your feedback helps us understand what we're doing well and where we can improve. Whether you had a positive experience or encountered challenges during your visit, we want to hear from you.</p>
+                        <p>Your insights directly contribute to enhancing our patient care, facilities, and services for everyone in our community.</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="images/feedback-illustration.svg" alt="Feedback Illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Form Section -->
+        <section class="feedback-form-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Share Your Experience</h2>
+                    <p>Please fill out the form below to submit your feedback. All fields marked with an asterisk (*) are required.</p>
+                </div>
+                
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-group">
+                        <label for="visitType">Type of Visit *</label>
+                        <select id="visitType" name="visitType" required>
+                            <option value="" disabled selected>Select visit type</option>
+                            <option value="outpatient">Outpatient Visit</option>
+                            <option value="inpatient">Inpatient Stay</option>
+                            <option value="emergency">Emergency Room</option>
+                            <option value="surgery">Surgery</option>
+                            <option value="diagnostic">Diagnostic Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="visitDate">Date of Visit *</label>
+                        <input type="date" id="visitDate" name="visitDate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="department">Department Visited *</label>
+                        <select id="department" name="department" required>
+                            <option value="" disabled selected>Select department</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="radiology">Radiology</option>
+                            <option value="emergency">Emergency</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label>How would you rate your overall experience? *</label>
+                        <div class="rating-container">
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5" required>
+                                <label for="star5" title="Excellent"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4" title="Very Good"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3" title="Good"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2" title="Fair"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1" title="Poor"><i class="fas fa-star"></i></label>
+                            </div>
+                            <div class="rating-text" id="ratingText">Select a rating</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label>Please rate the following aspects of your visit:</label>
+                        
+                        <div class="aspect-rating">
+                            <span class="aspect-label">Staff Courtesy and Professionalism</span>
+                            <div class="aspect-stars">
+                                <div class="rating small-rating">
+                                    <input type="radio" id="staff5" name="staffRating" value="5">
+                                    <label for="staff5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="staff4" name="staffRating" value="4">
+                                    <label for="staff4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="staff3" name="staffRating" value="3">
+                                    <label for="staff3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="staff2" name="staffRating" value="2">
+                                    <label for="staff2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="staff1" name="staffRating" value="1">
+                                    <label for="staff1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aspect-rating">
+                            <span class="aspect-label">Wait Time</span>
+                            <div class="aspect-stars">
+                                <div class="rating small-rating">
+                                    <input type="radio" id="wait5" name="waitRating" value="5">
+                                    <label for="wait5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="wait4" name="waitRating" value="4">
+                                    <label for="wait4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="wait3" name="waitRating" value="3">
+                                    <label for="wait3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="wait2" name="waitRating" value="2">
+                                    <label for="wait2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="wait1" name="waitRating" value="1">
+                                    <label for="wait1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aspect-rating">
+                            <span class="aspect-label">Cleanliness and Comfort</span>
+                            <div class="aspect-stars">
+                                <div class="rating small-rating">
+                                    <input type="radio" id="clean5" name="cleanRating" value="5">
+                                    <label for="clean5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="clean4" name="cleanRating" value="4">
+                                    <label for="clean4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="clean3" name="cleanRating" value="3">
+                                    <label for="clean3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="clean2" name="cleanRating" value="2">
+                                    <label for="clean2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="clean1" name="cleanRating" value="1">
+                                    <label for="clean1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aspect-rating">
+                            <span class="aspect-label">Quality of Care</span>
+                            <div class="aspect-stars">
+                                <div class="rating small-rating">
+                                    <input type="radio" id="care5" name="careRating" value="5">
+                                    <label for="care5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="care4" name="careRating" value="4">
+                                    <label for="care4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="care3" name="careRating" value="3">
+                                    <label for="care3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="care2" name="careRating" value="2">
+                                    <label for="care2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="care1" name="careRating" value="1">
+                                    <label for="care1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="aspect-rating">
+                            <span class="aspect-label">Communication and Information</span>
+                            <div class="aspect-stars">
+                                <div class="rating small-rating">
+                                    <input type="radio" id="comm5" name="commRating" value="5">
+                                    <label for="comm5"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="comm4" name="commRating" value="4">
+                                    <label for="comm4"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="comm3" name="commRating" value="3">
+                                    <label for="comm3"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="comm2" name="commRating" value="2">
+                                    <label for="comm2"><i class="fas fa-star"></i></label>
+                                    <input type="radio" id="comm1" name="commRating" value="1">
+                                    <label for="comm1"><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="positiveExperience">What went well during your visit?</label>
+                        <textarea id="positiveExperience" name="positiveExperience" rows="4" placeholder="Please share any positive aspects of your experience"></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="improvementAreas">What could we improve?</label>
+                        <textarea id="improvementAreas" name="improvementAreas" rows="4" placeholder="Please share any suggestions for improvement"></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="additionalComments">Additional Comments</label>
+                        <textarea id="additionalComments" name="additionalComments" rows="4" placeholder="Any other comments or feedback you'd like to share"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name (optional)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your email (optional)">
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="contactConsent" name="contactConsent">
+                            <label for="contactConsent">I consent to being contacted about my feedback if necessary</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                            <label for="privacyConsent">I agree to the <a href="#">Privacy Policy</a> and understand that my feedback may be used to improve hospital services *</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="reset" class="btn btn-outline">Clear Form</button>
+                        <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Feedback Success Modal -->
+        <div class="modal" id="feedbackSuccessModal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body text-center">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h2>Thank You for Your Feedback!</h2>
+                    <p>We appreciate you taking the time to share your experience with us. Your feedback helps us improve our services for all patients.</p>
+                    <p>If you provided contact information and consented to being contacted, a member of our team may reach out to you for additional information.</p>
+                    <button class="btn btn-primary modal-close-btn">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Patients Say</h2>
+                    <p>Read about the experiences of other patients at MediCare Hospital</p>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The care I received at MediCare Hospital was exceptional. From the moment I arrived, the staff made me feel comfortable and well-cared for. Dr. Johnson took the time to explain my condition and treatment options thoroughly. I couldn't be more grateful for the compassionate care I received."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/patient1.jpg" alt="Sarah M.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah M.</h4>
+                                <p>Cardiology Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"I was nervous about my surgery, but the surgical team at MediCare Hospital was amazing. They explained everything beforehand, answered all my questions, and checked on me frequently during recovery. The facilities were clean and modern, and the nurses were attentive and kind."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/patient2.jpg" alt="Robert T.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Robert T.</h4>
+                                <p>Orthopedic Surgery Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The pediatric department at MediCare Hospital is outstanding. When my son was admitted with a high fever, the pediatric team not only provided excellent medical care but also made him feel safe and comfortable. They even had child-friendly activities to keep him occupied during his stay. I highly recommend their pediatric services."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/patient3.jpg" alt="Jennifer L.">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jennifer L.</h4>
+                                <p>Parent of Pediatric Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-navigation">
+                    <button class="testimonial-nav prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimonial-nav next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="feedback-faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about our feedback process</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What happens to my feedback after I submit it?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your feedback is reviewed by our Patient Experience team and shared with the relevant department leaders. We use this information to recognize exceptional staff performance and identify areas for improvement. Feedback is also aggregated and analyzed to track trends and implement system-wide improvements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is my feedback anonymous?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your feedback can be submitted anonymously if you prefer. However, if you would like us to follow up with you regarding your comments or concerns, we will need your contact information. We respect your privacy and will only use your information for the purpose of addressing your feedback.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How can I provide feedback about a specific staff member?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you would like to recognize a staff member who provided exceptional care or address concerns about a specific interaction, please include the staff member's name and department in your feedback. This helps us ensure that your comments reach the appropriate person or team.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I file a formal complaint through this feedback form?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>While we review all feedback, if you wish to file a formal complaint, we recommend contacting our Patient Relations Department directly at (123) 456-7891 or patientrelations@medicarehospital.com. This ensures that your complaint is documented and addressed through our formal resolution process.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How often should I provide feedback?</h3>
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We welcome feedback after each visit or interaction with our hospital. Your experiences may vary from one visit to another, and each piece of feedback helps us understand different aspects of our services. There is no limit to how often you can provide feedback.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Ways to Provide Feedback -->
+        <section class="other-feedback-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Other Ways to Provide Feedback</h2>
+                    <p>In addition to this online form, we offer several other ways to share your thoughts</p>
+                </div>
+                
+                <div class="feedback-methods">
+                    <div class="feedback-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>By Phone</h3>
+                        <p>Call our Patient Experience team at (123) 456-7893 Monday through Friday, 8:00 AM to 5:00 PM.</p>
+                    </div>
+                    
+                    <div class="feedback-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>By Email</h3>
+                        <p>Send your feedback to feedback@medicarehospital.com at any time.</p>
+                    </div>
+                    
+                    <div class="feedback-method">
+                        <div class="method-icon">
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <h3>In Person</h3>
+                        <p>Speak with a Patient Relations representative at our main information desk during your visit.</p>
+                    </div>
+                    
+                    <div class="feedback-method">
+                        <div class="method-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3>By Mail</h3>
+                        <p>Send written feedback to:<br>Patient Experience Department<br>MediCare Hospital<br>123 Medical Center Drive<br>Healthcare City, HC 12345</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    <p>Providing quality healthcare services for over 20 years with a focus on patient comfort and cutting-edge medical technology.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive, Healthcare City, HC 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@medicarehospital.com</p>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573862687!2d-73.98784492426385!3d40.748440471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca8d930c1aa0e48!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1688596481478!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>

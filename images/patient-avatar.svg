@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Patient Avatar -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .secondary { fill: #34a853; }
+    .background { fill: #f1f3f4; }
+    .face { fill: #fce8d6; }
+    .shirt { fill: #e8f0fe; }
+    .hair { fill: #5f6368; }
+  </style>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" class="background" />
+  
+  <!-- Shirt/Body -->
+  <path d="M60,90 L60,200 L140,200 L140,90 C140,90 130,110 100,110 C70,110 60,90 60,90 Z" class="shirt" />
+  
+  <!-- Face -->
+  <circle cx="100" cy="70" r="40" class="face" />
+  
+  <!-- Hair -->
+  <path d="M60,70 C60,45 80,30 100,30 C120,30 140,45 140,70 C140,70 140,55 100,55 C60,55 60,70 60,70 Z" class="hair" />
+  
+  <!-- Eyes -->
+  <ellipse cx="85" cy="65" rx="5" ry="3" fill="#333" />
+  <ellipse cx="115" cy="65" rx="5" ry="3" fill="#333" />
+  
+  <!-- Smile -->
+  <path d="M85,80 C85,90 115,90 115,80" stroke="#333" stroke-width="2" fill="none" />
+  
+  <!-- Medical Band -->
+  <rect x="75" y="120" width="50" height="10" rx="5" class="primary" />
+</svg>

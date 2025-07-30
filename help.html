@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center | MediCare Hospital</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header-fix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Help Center Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Help Center</h1>
+                    <p>Find guides, resources, and support to help you navigate your healthcare journey</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Search Section -->
+        <section class="help-search">
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" id="helpSearch" placeholder="What can we help you with?" class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="popular-topics">
+                    <h3>Popular Topics:</h3>
+                    <div class="topic-tags">
+                        <a href="#appointments" class="topic-tag">Appointments</a>
+                        <a href="#insurance" class="topic-tag">Insurance</a>
+                        <a href="#billing" class="topic-tag">Billing</a>
+                        <a href="#medical-records" class="topic-tag">Medical Records</a>
+                        <a href="#patient-portal" class="topic-tag">Patient Portal</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Categories Section -->
+        <section class="help-categories">
+            <div class="container">
+                <div class="categories-grid">
+                    <a href="#appointments" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>Appointments</h3>
+                        <p>Schedule, reschedule, or cancel appointments</p>
+                    </a>
+                    <a href="#insurance" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <h3>Insurance & Billing</h3>
+                        <p>Insurance coverage, bills, and payment options</p>
+                    </a>
+                    <a href="#medical-records" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-notes-medical"></i>
+                        </div>
+                        <h3>Medical Records</h3>
+                        <p>Access, request, and understand your records</p>
+                    </a>
+                    <a href="#patient-portal" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <h3>Patient Portal</h3>
+                        <p>Register, login, and navigate the portal</p>
+                    </a>
+                    <a href="#preparing" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Preparing for Your Visit</h3>
+                        <p>What to bring and what to expect</p>
+                    </a>
+                    <a href="#services" class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3>Hospital Services</h3>
+                        <p>Information about our services and facilities</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Content Sections -->
+        <section class="help-content">
+            <div class="container">
+                <!-- Appointments Section -->
+                <div id="appointments" class="help-section">
+                    <h2>Appointments</h2>
+                    <div class="help-articles">
+                        <div class="help-article">
+                            <h3>How to Schedule an Appointment</h3>
+                            <p>Learn how to schedule appointments through our website, by phone, or in person.</p>
+                            <div class="article-steps">
+                                <h4>Online Scheduling:</h4>
+                                <ol>
+                                    <li>Visit our <a href="appointment.html">Appointment page</a></li>
+                                    <li>Fill out the appointment request form</li>
+                                    <li>Select your preferred doctor, date, and time</li>
+                                    <li>Submit the form and wait for confirmation</li>
+                                </ol>
+                                <h4>Phone Scheduling:</h4>
+                                <ol>
+                                    <li>Call our appointment line at (123) 456-7890</li>
+                                    <li>Provide your information to the receptionist</li>
+                                    <li>Discuss available dates and times</li>
+                                    <li>Receive your appointment confirmation</li>
+                                </ol>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                        <div class="help-article">
+                            <h3>Rescheduling or Canceling Appointments</h3>
+                            <p>Need to change your appointment? Here's how to reschedule or cancel.</p>
+                            <div class="article-content">
+                                <p>To reschedule or cancel an appointment:</p>
+                                <ul>
+                                    <li>Log in to your patient portal account</li>
+                                    <li>Navigate to "My Appointments"</li>
+                                    <li>Select the appointment you wish to change</li>
+                                    <li>Choose "Reschedule" or "Cancel"</li>
+                                </ul>
+                                <p>Alternatively, you can call our appointment line at (123) 456-7890.</p>
+                                <p><strong>Note:</strong> Please provide at least 24 hours' notice for cancellations to avoid a cancellation fee.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insurance & Billing Section -->
+                <div id="insurance" class="help-section">
+                    <h2>Insurance & Billing</h2>
+                    <div class="help-articles">
+                        <div class="help-article">
+                            <h3>Understanding Your Medical Bill</h3>
+                            <p>A guide to reading and understanding your hospital bill.</p>
+                            <div class="article-content">
+                                <p>Your medical bill contains several key sections:</p>
+                                <ul>
+                                    <li><strong>Patient Information:</strong> Your personal and insurance details</li>
+                                    <li><strong>Service Summary:</strong> List of services provided with dates</li>
+                                    <li><strong>Charges:</strong> Itemized list of charges for each service</li>
+                                    <li><strong>Insurance Payments:</strong> What your insurance covered</li>
+                                    <li><strong>Patient Responsibility:</strong> The amount you owe</li>
+                                </ul>
+                                <p>If you have questions about your bill, please contact our billing department at (123) 456-7892.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                        <div class="help-article">
+                            <h3>Payment Options</h3>
+                            <p>Learn about the various ways you can pay your medical bills.</p>
+                            <div class="article-content">
+                                <h4>Payment Methods:</h4>
+                                <ul>
+                                    <li><strong>Online:</strong> Pay through our secure patient portal</li>
+                                    <li><strong>By Phone:</strong> Call (123) 456-7892 to pay by credit card</li>
+                                    <li><strong>By Mail:</strong> Send check or money order to our billing address</li>
+                                    <li><strong>In Person:</strong> Pay at our billing office during business hours</li>
+                                </ul>
+                                <h4>Payment Plans:</h4>
+                                <p>We offer interest-free payment plans for patients who need to spread out their payments. Contact our billing department to set up a plan that works for you.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Records Section -->
+                <div id="medical-records" class="help-section">
+                    <h2>Medical Records</h2>
+                    <div class="help-articles">
+                        <div class="help-article">
+                            <h3>Accessing Your Medical Records</h3>
+                            <p>How to view, download, and request copies of your medical records.</p>
+                            <div class="article-content">
+                                <h4>Through Patient Portal:</h4>
+                                <ol>
+                                    <li>Log in to your patient portal account</li>
+                                    <li>Navigate to "Medical Records" section</li>
+                                    <li>View or download available records</li>
+                                </ol>
+                                <h4>Requesting Complete Records:</h4>
+                                <p>For complete medical records or records not available in the portal:</p>
+                                <ol>
+                                    <li>Download and complete the Medical Records Request Form</li>
+                                    <li>Submit the completed form to our Medical Records Department</li>
+                                    <li>Allow 5-7 business days for processing</li>
+                                </ol>
+                                <p><strong>Note:</strong> There may be a fee for printed copies of medical records.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                        <div class="help-article">
+                            <h3>Understanding Your Test Results</h3>
+                            <p>A guide to interpreting common laboratory and diagnostic test results.</p>
+                            <div class="article-content">
+                                <p>Your test results typically include:</p>
+                                <ul>
+                                    <li><strong>Test Name:</strong> What was measured</li>
+                                    <li><strong>Your Result:</strong> The measured value</li>
+                                    <li><strong>Reference Range:</strong> Normal range for the test</li>
+                                    <li><strong>Flag:</strong> Indicates if result is normal (N), high (H), or low (L)</li>
+                                </ul>
+                                <p>Always discuss your test results with your healthcare provider for proper interpretation and next steps.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Patient Portal Section -->
+                <div id="patient-portal" class="help-section">
+                    <h2>Patient Portal</h2>
+                    <div class="help-articles">
+                        <div class="help-article">
+                            <h3>Creating Your Patient Portal Account</h3>
+                            <p>Step-by-step guide to registering for our patient portal.</p>
+                            <div class="article-steps">
+                                <ol>
+                                    <li>Visit our website and click on "Patient Portal"</li>
+                                    <li>Click "Register" or "Sign Up"</li>
+                                    <li>Enter your personal information and the enrollment token provided during your visit</li>
+                                    <li>Create a username and password</li>
+                                    <li>Set up security questions</li>
+                                    <li>Verify your email address</li>
+                                    <li>Log in to access your portal</li>
+                                </ol>
+                                <p>If you didn't receive an enrollment token, please call (123) 456-7890 for assistance.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                        <div class="help-article">
+                            <h3>Patient Portal Features</h3>
+                            <p>Learn about all the features available in our patient portal.</p>
+                            <div class="article-content">
+                                <p>Our patient portal allows you to:</p>
+                                <ul>
+                                    <li>Schedule and manage appointments</li>
+                                    <li>View lab and test results</li>
+                                    <li>Request prescription refills</li>
+                                    <li>Send secure messages to your healthcare team</li>
+                                    <li>View and pay bills</li>
+                                    <li>Update your personal information</li>
+                                    <li>Access educational resources</li>
+                                </ul>
+                                <p>For technical support with the patient portal, please call (123) 456-7895.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Preparing for Your Visit Section -->
+                <div id="preparing" class="help-section">
+                    <h2>Preparing for Your Visit</h2>
+                    <div class="help-articles">
+                        <div class="help-article">
+                            <h3>What to Bring to Your Appointment</h3>
+                            <p>A checklist of items to bring to ensure a smooth visit.</p>
+                            <div class="article-content">
+                                <h4>Essential Items:</h4>
+                                <ul>
+                                    <li>Photo ID (driver's license, passport, etc.)</li>
+                                    <li>Insurance card</li>
+                                    <li>List of current medications (including dosages)</li>
+                                    <li>List of allergies</li>
+                                    <li>Medical history information</li>
+                                    <li>Referral form (if required by your insurance)</li>
+                                    <li>Payment method for copays or deductibles</li>
+                                </ul>
+                                <h4>Additional Items:</h4>
+                                <ul>
+                                    <li>Previous test results related to your visit</li>
+                                    <li>List of questions for your doctor</li>
+                                    <li>A family member or friend (if you'd like someone with you)</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                        <div class="help-article">
+                            <h3>Preparing for Common Procedures</h3>
+                            <p>Guidelines for preparing for common tests and procedures.</p>
+                            <div class="article-content">
+                                <h4>Blood Tests:</h4>
+                                <ul>
+                                    <li>Fast for 8-12 hours before the test (if instructed)</li>
+                                    <li>Drink plenty of water (unless instructed otherwise)</li>
+                                    <li>Continue taking medications (unless instructed otherwise)</li>
+                                </ul>
+                                <h4>Imaging Tests (X-ray, CT, MRI):</h4>
+                                <ul>
+                                    <li>Wear comfortable clothing without metal</li>
+                                    <li>Remove jewelry and metal objects</li>
+                                    <li>Follow any specific preparation instructions</li>
+                                </ul>
+                                <p><strong>Note:</strong> Always follow the specific instructions provided by your healthcare provider, as preparation may vary based on your individual circumstances.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospital Services Section -->
+                <div id="services" class="help-section">
+                    <h2>Hospital Services</h2>
+                    <div class="help-articles">
+                        <div class="help-article">
+                            <h3>Hospital Facilities Guide</h3>
+                            <p>Information about our hospital facilities and amenities.</p>
+                            <div class="article-content">
+                                <h4>Main Hospital Building:</h4>
+                                <ul>
+                                    <li><strong>1st Floor:</strong> Main Entrance, Reception, Cafeteria, Gift Shop, Emergency Department</li>
+                                    <li><strong>2nd Floor:</strong> Outpatient Services, Laboratory, Imaging Center</li>
+                                    <li><strong>3rd Floor:</strong> Surgical Services, Pre-op, Recovery</li>
+                                    <li><strong>4th Floor:</strong> Medical/Surgical Inpatient Units</li>
+                                    <li><strong>5th Floor:</strong> Maternity, Labor & Delivery, NICU</li>
+                                    <li><strong>6th Floor:</strong> Intensive Care Units (ICU, CCU)</li>
+                                </ul>
+                                <h4>Amenities:</h4>
+                                <ul>
+                                    <li>Free Wi-Fi throughout the hospital</li>
+                                    <li>ATM in the main lobby</li>
+                                    <li>Chapel on the 1st floor</li>
+                                    <li>Cafeteria and coffee shop</li>
+                                    <li>Gift shop with flowers, cards, and essentials</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                        <div class="help-article">
+                            <h3>Specialized Services</h3>
+                            <p>Information about our specialized medical services.</p>
+                            <div class="article-content">
+                                <p>We offer a wide range of specialized services, including:</p>
+                                <ul>
+                                    <li><strong>Heart Center:</strong> Comprehensive cardiac care, including diagnostics, interventions, and rehabilitation</li>
+                                    <li><strong>Cancer Center:</strong> Advanced cancer treatments, including chemotherapy, radiation therapy, and surgical oncology</li>
+                                    <li><strong>Women's Health Center:</strong> Specialized care for women of all ages, including obstetrics, gynecology, and breast health</li>
+                                    <li><strong>Orthopedic Center:</strong> Treatment for bone and joint conditions, including joint replacement and sports medicine</li>
+                                    <li><strong>Neuroscience Center:</strong> Care for neurological disorders, including stroke, epilepsy, and movement disorders</li>
+                                </ul>
+                                <p>For more information about our specialized services, please visit our <a href="services.html">Services page</a>.</p>
+                            </div>
+                            <a href="#" class="btn btn-sm">Read Full Guide</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Support Section -->
+        <section class="contact-support">
+            <div class="container">
+                <div class="support-content">
+                    <h2>Need More Help?</h2>
+                    <p>Our support team is available to assist you with any questions or concerns.</p>
+                    <div class="support-options">
+                        <div class="support-option">
+                            <div class="support-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Call Us</h3>
+                            <p>Speak with a support representative</p>
+                            <p class="contact-info">(123) 456-7890</p>
+                            <p class="hours">Mon-Fri: 8am-8pm, Sat: 9am-5pm</p>
+                        </div>
+                        <div class="support-option">
+                            <div class="support-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Us</h3>
+                            <p>Send us your questions anytime</p>
+                            <p class="contact-info">support@medicarehospital.com</p>
+                            <p class="hours">Response within 24 hours</p>
+                        </div>
+                        <div class="support-option">
+                            <div class="support-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Live Chat</h3>
+                            <p>Chat with a support representative</p>
+                            <a href="#" class="btn btn-sm">Start Chat</a>
+                            <p class="hours">Available Mon-Fri: 8am-6pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    <p>Providing quality healthcare services for over 20 years with a focus on patient comfort and cutting-edge medical technology.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive, Healthcare City, HC 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@medicarehospital.com</p>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573862687!2d-73.98784492426385!3d40.748440471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca8d930c1aa0e48!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1688596481478!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/help.js"></script>
+</body>
+</html>

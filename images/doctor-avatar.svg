@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Doctor Avatar -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .secondary { fill: #34a853; }
+    .background { fill: #e8f0fe; }
+    .face { fill: #fce8d6; }
+    .coat { fill: #ffffff; }
+    .hair { fill: #5f6368; }
+  </style>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" class="background" />
+  
+  <!-- Doctor Coat -->
+  <path d="M60,90 L60,200 L140,200 L140,90 C140,90 130,110 100,110 C70,110 60,90 60,90 Z" class="coat" />
+  
+  <!-- Coat Details -->
+  <path d="M60,90 L60,200 L75,200 L75,130 C75,130 85,140 100,140 C115,140 125,130 125,130 L125,200 L140,200 L140,90" stroke="#e0e0e0" stroke-width="2" fill="none" />
+  
+  <!-- Stethoscope -->
+  <path d="M85,130 C85,130 75,140 75,150 C75,160 85,165 85,175" stroke="#1a73e8" stroke-width="3" fill="none" />
+  <circle cx="85" cy="175" r="5" class="primary" />
+  
+  <!-- Face -->
+  <circle cx="100" cy="70" r="40" class="face" />
+  
+  <!-- Hair -->
+  <path d="M60,70 C60,45 80,30 100,30 C120,30 140,45 140,70 C140,70 140,55 100,55 C60,55 60,70 60,70 Z" class="hair" />
+  
+  <!-- Eyes -->
+  <ellipse cx="85" cy="65" rx="5" ry="3" fill="#333" />
+  <ellipse cx="115" cy="65" rx="5" ry="3" fill="#333" />
+  
+  <!-- Smile -->
+  <path d="M85,80 C85,90 115,90 115,80" stroke="#333" stroke-width="2" fill="none" />
+  
+  <!-- Medical Cross Badge -->
+  <rect x="95" y="110" width="10" height="20" rx="1" class="primary" />
+  <rect x="90" y="115" width="20" height="10" rx="1" class="primary" />
+</svg>

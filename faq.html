@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | MediCare Hospital</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header-fix.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- FAQ Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Find answers to common questions about our services and facilities</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Search Section -->
+        <section class="faq-search">
+            <div class="container">
+                <div class="search-container">
+                    <input type="text" id="faqSearch" placeholder="Search for questions..." class="search-input">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="faq-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="appointments">Appointments</button>
+                    <button class="category-btn" data-category="services">Services</button>
+                    <button class="category-btn" data-category="insurance">Insurance</button>
+                    <button class="category-btn" data-category="billing">Billing</button>
+                    <button class="category-btn" data-category="visiting">Visiting</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="faq-accordion">
+            <div class="container">
+                <div class="faq-container">
+                    <!-- Appointments FAQs -->
+                    <div class="faq-group" data-category="appointments">
+                        <h2>Appointments</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>How do I schedule an appointment?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>You can schedule an appointment in several ways:</p>
+                                    <ul>
+                                        <li>Online through our website's appointment page</li>
+                                        <li>By calling our appointment line at (123) 456-7890</li>
+                                        <li>In person at our reception desk during business hours</li>
+                                        <li>Through our mobile app (available on iOS and Android)</li>
+                                    </ul>
+                                    <p>For urgent care needs, we offer same-day appointments based on availability.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What information do I need to provide when booking an appointment?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>When booking an appointment, please have the following information ready:</p>
+                                    <ul>
+                                        <li>Full name and date of birth</li>
+                                        <li>Contact information (phone and email)</li>
+                                        <li>Insurance details (if applicable)</li>
+                                        <li>Reason for visit</li>
+                                        <li>Preferred date and time</li>
+                                        <li>Preferred doctor (if you have one)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>How far in advance should I schedule an appointment?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>For routine check-ups and non-urgent consultations, we recommend scheduling 2-3 weeks in advance to ensure you get your preferred date and time. For specialist appointments, it's advisable to book 4-6 weeks ahead as these tend to fill up quickly.</p>
+                                    <p>If you have an urgent medical concern, please call our office, and we will do our best to accommodate you as soon as possible, often on the same day.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What is your cancellation policy?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>We understand that plans can change. We request that you notify us at least 24 hours in advance if you need to cancel or reschedule your appointment. This allows us to offer the time slot to other patients who may need care.</p>
+                                    <p>Repeated no-shows or late cancellations (less than 24 hours' notice) may result in a cancellation fee of $25.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services FAQs -->
+                    <div class="faq-group" data-category="services">
+                        <h2>Services</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What medical specialties do you offer?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>MediCare Hospital offers a comprehensive range of medical specialties, including:</p>
+                                    <ul>
+                                        <li>Cardiology</li>
+                                        <li>Dermatology</li>
+                                        <li>Endocrinology</li>
+                                        <li>Gastroenterology</li>
+                                        <li>Neurology</li>
+                                        <li>Obstetrics and Gynecology</li>
+                                        <li>Oncology</li>
+                                        <li>Orthopedics</li>
+                                        <li>Pediatrics</li>
+                                        <li>Psychiatry</li>
+                                        <li>Pulmonology</li>
+                                        <li>Urology</li>
+                                    </ul>
+                                    <p>For a complete list of our specialties and services, please visit our <a href="services.html">Services page</a>.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Do you offer emergency services?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Yes, our Emergency Department is open 24 hours a day, 7 days a week, including holidays. Our emergency team is equipped to handle all types of medical emergencies for patients of all ages.</p>
+                                    <p>For life-threatening emergencies, please call 911 immediately.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What diagnostic services are available?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>We offer a full range of diagnostic services, including:</p>
+                                    <ul>
+                                        <li>Laboratory testing (blood work, urinalysis, etc.)</li>
+                                        <li>X-rays</li>
+                                        <li>CT scans</li>
+                                        <li>MRI</li>
+                                        <li>Ultrasound</li>
+                                        <li>Mammography</li>
+                                        <li>Bone density scans</li>
+                                        <li>Electrocardiograms (EKG/ECG)</li>
+                                        <li>Stress tests</li>
+                                        <li>Endoscopy</li>
+                                    </ul>
+                                    <p>Most diagnostic services require a doctor's order. Some tests may require preparation or fasting beforehand.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Do you offer telemedicine services?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Yes, we offer telemedicine appointments for many types of visits. Virtual visits are available for:</p>
+                                    <ul>
+                                        <li>Follow-up appointments</li>
+                                        <li>Medication management</li>
+                                        <li>Minor illness consultation</li>
+                                        <li>Mental health services</li>
+                                        <li>Chronic disease management</li>
+                                    </ul>
+                                    <p>To schedule a telemedicine appointment, please call our office or use our online appointment system and select the virtual visit option.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insurance FAQs -->
+                    <div class="faq-group" data-category="insurance">
+                        <h2>Insurance & Coverage</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What insurance plans do you accept?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>We accept most major insurance plans, including:</p>
+                                    <ul>
+                                        <li>Blue Cross Blue Shield</li>
+                                        <li>Aetna</li>
+                                        <li>Cigna</li>
+                                        <li>UnitedHealthcare</li>
+                                        <li>Medicare</li>
+                                        <li>Medicaid</li>
+                                    </ul>
+                                    <p>Please contact our billing department at (123) 456-7892 to verify if we accept your specific insurance plan.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What if I don't have insurance?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>We offer care to all patients regardless of insurance status. For uninsured patients, we provide:</p>
+                                    <ul>
+                                        <li>Self-pay options with transparent pricing</li>
+                                        <li>Sliding fee scale based on income</li>
+                                        <li>Payment plans for larger expenses</li>
+                                        <li>Financial counseling to explore assistance programs</li>
+                                    </ul>
+                                    <p>Our financial counselors can help you understand your options and find the most affordable way to receive care. Please contact our billing office at (123) 456-7892 for more information.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Do I need a referral to see a specialist?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Whether you need a referral depends on your insurance plan:</p>
+                                    <ul>
+                                        <li>HMO plans typically require a referral from your primary care physician</li>
+                                        <li>PPO plans generally allow you to see specialists without a referral, though your out-of-pocket costs may be higher</li>
+                                        <li>Medicare Advantage plans vary in their referral requirements</li>
+                                    </ul>
+                                    <p>We recommend checking with your insurance provider about their referral requirements before scheduling with a specialist. If you need help navigating this process, our staff is happy to assist you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Billing FAQs -->
+                    <div class="faq-group" data-category="billing">
+                        <h2>Billing & Payments</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>How can I pay my bill?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>We offer several convenient payment options:</p>
+                                    <ul>
+                                        <li>Online through our patient portal</li>
+                                        <li>By phone at (123) 456-7892</li>
+                                        <li>By mail to our billing address</li>
+                                        <li>In person at our billing office</li>
+                                    </ul>
+                                    <p>We accept cash, personal checks, and all major credit cards (Visa, MasterCard, American Express, and Discover).</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Can I set up a payment plan?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Yes, we offer interest-free payment plans for patients who need to spread out their payments. Our financial counselors will work with you to create a plan that fits your budget.</p>
+                                    <p>To set up a payment plan, please contact our billing department at (123) 456-7892 or visit our billing office in person.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Why did I receive multiple bills?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>You may receive separate bills for different services provided during your visit. For example:</p>
+                                    <ul>
+                                        <li>Hospital services (facility fees, room charges, etc.)</li>
+                                        <li>Physician services (from doctors who treated you)</li>
+                                        <li>Laboratory services (for blood tests, etc.)</li>
+                                        <li>Radiology services (for X-rays, CT scans, etc.)</li>
+                                    </ul>
+                                    <p>If you have questions about your bills or need help understanding what you owe, please contact our billing department at (123) 456-7892.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visiting FAQs -->
+                    <div class="faq-group" data-category="visiting">
+                        <h2>Visiting the Hospital</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>What are the visiting hours?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Our general visiting hours are:</p>
+                                    <ul>
+                                        <li>General Inpatient Units: 8:00 AM - 8:00 PM daily</li>
+                                        <li>Intensive Care Unit (ICU): 10:00 AM - 12:00 PM and 4:00 PM - 6:00 PM daily</li>
+                                        <li>Maternity Ward: 9:00 AM - 9:00 PM daily</li>
+                                        <li>Pediatric Unit: 8:00 AM - 8:00 PM (parents/guardians can stay 24/7)</li>
+                                    </ul>
+                                    <p>Please note that visiting hours may be adjusted based on the patient's condition or special circumstances. We recommend calling ahead to confirm.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Where can I park?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>We offer several parking options:</p>
+                                    <ul>
+                                        <li>Main Parking Garage: Located adjacent to the hospital entrance</li>
+                                        <li>Surface Lot A: Near the Emergency Department</li>
+                                        <li>Surface Lot B: Near the Outpatient Center</li>
+                                    </ul>
+                                    <p>Parking rates:</p>
+                                    <ul>
+                                        <li>First 30 minutes: Free</li>
+                                        <li>Up to 2 hours: $5</li>
+                                        <li>2-4 hours: $8</li>
+                                        <li>4-24 hours: $12</li>
+                                        <li>Weekly passes: $40</li>
+                                    </ul>
+                                    <p>Discounted parking passes are available for patients receiving ongoing treatments and for family members of long-term patients.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Is there a cafeteria or food options available?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Yes, we have several food options available for visitors:</p>
+                                    <ul>
+                                        <li>Main Cafeteria (1st Floor): Open 6:30 AM - 8:00 PM daily</li>
+                                        <li>Coffee Shop (Main Lobby): Open 7:00 AM - 6:00 PM weekdays, 8:00 AM - 2:00 PM weekends</li>
+                                        <li>Vending Machines: Available 24/7 in various locations throughout the hospital</li>
+                                    </ul>
+                                    <p>The cafeteria offers a variety of hot meals, sandwiches, salads, and snacks. Vegetarian, vegan, and gluten-free options are available.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    <span>Is Wi-Fi available?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Yes, free Wi-Fi is available throughout the hospital for patients and visitors. To connect:</p>
+                                    <ol>
+                                        <li>Select the network "MediCare-Guest" on your device</li>
+                                        <li>Open your web browser, which will redirect to our Wi-Fi login page</li>
+                                        <li>Accept the terms of service</li>
+                                        <li>You'll be connected for 24 hours, after which you'll need to log in again</li>
+                                    </ol>
+                                    <p>If you experience any issues connecting to the Wi-Fi, please ask a staff member for assistance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Have Questions Section -->
+        <section class="still-questions">
+            <div class="container">
+                <div class="questions-content">
+                    <h2>Still Have Questions?</h2>
+                    <p>If you couldn't find the answer you were looking for, please don't hesitate to reach out to us directly.</p>
+                    <div class="contact-options">
+                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                        <a href="help.html" class="btn btn-outline">Visit Help Center</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    <p>Providing quality healthcare services for over 20 years with a focus on patient comfort and cutting-edge medical technology.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Center Drive, Healthcare City, HC 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@medicarehospital.com</p>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573862687!2d-73.98784492426385!3d40.748440471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca8d930c1aa0e48!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1688596481478!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>

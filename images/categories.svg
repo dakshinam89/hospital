@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <!-- Categories Illustration -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .primary-light { fill: #e8f0fe; }
+    .secondary { fill: #34a853; }
+    .secondary-light { fill: #e6f4ea; }
+    .accent { fill: #fbbc04; }
+    .accent-light { fill: #fef7e0; }
+    .error { fill: #ea4335; }
+    .error-light { fill: #fcebe9; }
+    .dark { fill: #202124; }
+    .medium { fill: #5f6368; }
+    .light { fill: #f8f9fa; }
+    .white { fill: #ffffff; }
+    .outline { fill: none; stroke: #dadce0; stroke-width: 2; }
+    text { font-family: Arial, sans-serif; }
+    .category-title { font-size: 14px; font-weight: bold; }
+    .category-subtitle { font-size: 12px; fill: #5f6368; }
+  </style>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="200" fill="none" />
+  
+  <!-- Cardiology Category -->
+  <g transform="translate(50, 50)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="primary-light" />
+    
+    <!-- Heart Icon -->
+    <g transform="translate(25, 25)">
+      <path d="M25,45 L40,30 Q50,20 50,10 Q50,0 40,0 Q30,0 25,10 Q20,0 10,0 Q0,0 0,10 Q0,20 10,30 Z" class="error" />
+      <path d="M25,40 L37,28 Q45,20 45,12 Q45,5 37,5 Q30,5 25,12 Q20,5 13,5 Q5,5 5,12 Q5,20 13,28 Z" class="white" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" class="category-title dark">Cardiology</text>
+    <text x="50" y="135" text-anchor="middle" class="category-subtitle">Heart Care</text>
+  </g>
+  
+  <!-- General Physician Category -->
+  <g transform="translate(200, 50)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="secondary-light" />
+    
+    <!-- Doctor Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Stethoscope -->
+      <path d="M30,20 C30,15 35,10 40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 C35,40 30,35 30,30 L30,25" stroke="#34a853" stroke-width="3" fill="none" />
+      <circle cx="25" cy="25" r="5" class="secondary" />
+      
+      <!-- Doctor Head -->
+      <circle cx="25" cy="15" r="10" fill="#fce8d6" />
+      
+      <!-- Doctor Coat -->
+      <path d="M15,25 L15,50 L35,50 L35,25 C35,25 30,30 25,30 C20,30 15,25 15,25 Z" class="white" stroke="#dadce0" stroke-width="1" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" class="category-title dark">General Physician</text>
+    <text x="50" y="135" text-anchor="middle" class="category-subtitle">Primary Care</text>
+  </g>
+  
+  <!-- ENT Category -->
+  <g transform="translate(350, 50)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="accent-light" />
+    
+    <!-- ENT Icon -->
+    <g transform="translate(25, 25)">
+      <!-- Ear -->
+      <path d="M15,15 C5,20 5,35 15,40 C20,42 25,35 25,30 C25,25 20,20 15,15 Z" class="accent" />
+      <path d="M17,20 C12,23 12,32 17,35 C20,36 22,32 22,30 C22,27 20,23 17,20 Z" class="white" />
+      
+      <!-- Nose -->
+      <path d="M30,15 L30,35 C30,40 35,40 40,35 L40,15 C40,10 35,10 30,15 Z" class="accent" />
+      <ellipse cx="35" cy="25" rx="2" ry="5" class="white" />
+      
+      <!-- Throat -->
+      <rect x="45" y="15" width="10" height="25" rx="5" class="accent" />
+      <rect x="47" y="20" width="6" height="15" rx="3" class="white" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" class="category-title dark">ENT</text>
+    <text x="50" y="135" text-anchor="middle" class="category-subtitle">Ear, Nose & Throat</text>
+  </g>
+  
+  <!-- Orthopedics Category -->
+  <g transform="translate(500, 50)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="error-light" />
+    
+    <!-- Bone Icon -->
+    <g transform="translate(25, 25)">
+      <path d="M20,10 C15,10 15,15 20,20 L30,30 C35,35 35,40 30,40 C25,40 25,35 30,30 L40,20 C45,15 45,10 40,10 C35,10 35,15 30,20 L20,30 C15,35 15,40 20,40 C25,40 25,35 20,30 L10,20 C5,15 5,10 10,10 C15,10 15,15 10,20 L20,30 C25,35 25,40 20,40" class="white" stroke="#ea4335" stroke-width="2" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" class="category-title dark">Orthopedics</text>
+    <text x="50" y="135" text-anchor="middle" class="category-subtitle">Bone & Joint Care</text>
+  </g>
+  
+  <!-- Neurology Category -->
+  <g transform="translate(650, 50)">
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="50" class="primary-light" />
+    
+    <!-- Brain Icon -->
+    <g transform="translate(25, 25)">
+      <path d="M25,10 C10,10 5,20 5,30 C5,40 15,45 25,45 C35,45 45,40 45,30 C45,20 40,10 25,10 Z" class="white" stroke="#1a73e8" stroke-width="2" />
+      <path d="M25,15 C15,15 10,20 10,30 C10,35 15,40 25,40 C35,40 40,35 40,30 C40,20 35,15 25,15 Z" class="primary-light" stroke="#1a73e8" stroke-width="1" />
+      <path d="M15,25 Q25,35 35,25" stroke="#1a73e8" stroke-width="1" fill="none" />
+      <path d="M15,30 Q25,20 35,30" stroke="#1a73e8" stroke-width="1" fill="none" />
+    </g>
+    
+    <!-- Text -->
+    <text x="50" y="120" text-anchor="middle" class="category-title dark">Neurology</text>
+    <text x="50" y="135" text-anchor="middle" class="category-subtitle">Brain & Nerve Care</text>
+  </g>
+  
+  <!-- Trending Badge -->
+  <g transform="translate(50, 20)">
+    <rect x="0" y="0" width="70" height="20" rx="10" class="error" />
+    <text x="35" y="14" text-anchor="middle" font-size="10" fill="white" font-weight="bold">TRENDING</text>
+  </g>
+</svg>

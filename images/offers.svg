@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <!-- Offers Illustration -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .primary-light { fill: #e8f0fe; }
+    .secondary { fill: #34a853; }
+    .secondary-light { fill: #e6f4ea; }
+    .accent { fill: #fbbc04; }
+    .accent-light { fill: #fef7e0; }
+    .error { fill: #ea4335; }
+    .error-light { fill: #fcebe9; }
+    .dark { fill: #202124; }
+    .medium { fill: #5f6368; }
+    .light { fill: #f8f9fa; }
+    .white { fill: #ffffff; }
+    .outline { fill: none; stroke: #dadce0; stroke-width: 2; }
+    text { font-family: Arial, sans-serif; }
+    .offer-title { font-size: 16px; font-weight: bold; }
+    .offer-subtitle { font-size: 12px; fill: #5f6368; }
+    .offer-price { font-size: 14px; font-weight: bold; }
+    .offer-discount { font-size: 14px; font-weight: bold; fill: #ea4335; }
+  </style>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="300" fill="none" />
+  
+  <!-- First Consultation Offer -->
+  <g transform="translate(50, 50)">
+    <!-- Card Background -->
+    <rect x="0" y="0" width="200" height="200" rx="10" class="white" stroke="#dadce0" stroke-width="2" />
+    
+    <!-- Discount Badge -->
+    <g transform="translate(150, 20) rotate(45)">
+      <rect x="-20" y="-10" width="40" height="20" rx="5" class="error" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" fill="white" font-weight="bold">20% OFF</text>
+    </g>
+    
+    <!-- Doctor Icon -->
+    <g transform="translate(75, 60)">
+      <!-- Stethoscope -->
+      <circle cx="25" cy="25" r="25" class="primary-light" />
+      <path d="M30,20 C30,15 35,10 40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 C35,40 30,35 30,30 L30,25" stroke="#1a73e8" stroke-width="3" fill="none" />
+      <circle cx="25" cy="25" r="5" class="primary" />
+      
+      <!-- Doctor Head -->
+      <circle cx="25" cy="15" r="10" fill="#fce8d6" />
+      
+      <!-- Doctor Coat -->
+      <path d="M15,25 L15,50 L35,50 L35,25 C35,25 30,30 25,30 C20,30 15,25 15,25 Z" class="white" stroke="#dadce0" stroke-width="1" />
+    </g>
+    
+    <!-- Text -->
+    <text x="100" y="130" text-anchor="middle" class="offer-title dark">First Consultation</text>
+    <text x="100" y="150" text-anchor="middle" class="offer-subtitle">New patients only</text>
+    <text x="70" y="175" text-anchor="middle" class="offer-price medium"><tspan text-decoration="line-through">$100</tspan></text>
+    <text x="130" y="175" text-anchor="middle" class="offer-discount">$80</text>
+  </g>
+  
+  <!-- Health Checkup Offer -->
+  <g transform="translate(300, 50)">
+    <!-- Card Background -->
+    <rect x="0" y="0" width="200" height="200" rx="10" class="white" stroke="#dadce0" stroke-width="2" />
+    
+    <!-- Discount Badge -->
+    <g transform="translate(150, 20) rotate(45)">
+      <rect x="-20" y="-10" width="40" height="20" rx="5" class="secondary" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" fill="white" font-weight="bold">15% OFF</text>
+    </g>
+    
+    <!-- Health Checkup Icon -->
+    <g transform="translate(75, 60)">
+      <circle cx="25" cy="25" r="25" class="secondary-light" />
+      
+      <!-- Clipboard -->
+      <rect x="15" y="10" width="30" height="40" rx="2" class="white" stroke="#34a853" stroke-width="2" />
+      <rect x="20" y="15" width="20" height="5" rx="1" class="secondary" />
+      <rect x="20" y="25" width="15" height="3" rx="1" class="secondary" />
+      <rect x="20" y="30" width="20" height="3" rx="1" class="secondary" />
+      <rect x="20" y="35" width="10" height="3" rx="1" class="secondary" />
+      
+      <!-- Heart Rate Line -->
+      <path d="M20,45 L25,40 L30,45 L35,35" stroke="#34a853" stroke-width="1" fill="none" />
+    </g>
+    
+    <!-- Text -->
+    <text x="100" y="130" text-anchor="middle" class="offer-title dark">Health Checkup</text>
+    <text x="100" y="150" text-anchor="middle" class="offer-subtitle">Complete package</text>
+    <text x="70" y="175" text-anchor="middle" class="offer-price medium"><tspan text-decoration="line-through">$200</tspan></text>
+    <text x="130" y="175" text-anchor="middle" class="offer-discount">$170</text>
+  </g>
+  
+  <!-- Family Package Offer -->
+  <g transform="translate(550, 50)">
+    <!-- Card Background -->
+    <rect x="0" y="0" width="200" height="200" rx="10" class="white" stroke="#dadce0" stroke-width="2" />
+    
+    <!-- Discount Badge -->
+    <g transform="translate(150, 20) rotate(45)">
+      <rect x="-20" y="-10" width="40" height="20" rx="5" class="accent" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" fill="white" font-weight="bold">25% OFF</text>
+    </g>
+    
+    <!-- Family Icon -->
+    <g transform="translate(75, 60)">
+      <circle cx="25" cy="25" r="25" class="accent-light" />
+      
+      <!-- Family Silhouettes -->
+      <circle cx="15" cy="15" r="7" class="accent" />
+      <path d="M8,50 L8,30 C8,25 12,22 15,22 C18,22 22,25 22,30 L22,50" class="accent" />
+      
+      <circle cx="35" cy="15" r="7" class="accent" />
+      <path d="M28,50 L28,30 C28,25 32,22 35,22 C38,22 42,25 42,30 L42,50" class="accent" />
+      
+      <circle cx="25" cy="20" r="5" class="accent" />
+      <path d="M20,50 L20,35 C20,32 22,30 25,30 C28,30 30,32 30,35 L30,50" class="accent" />
+    </g>
+    
+    <!-- Text -->
+    <text x="100" y="130" text-anchor="middle" class="offer-title dark">Family Package</text>
+    <text x="100" y="150" text-anchor="middle" class="offer-subtitle">Up to 4 members</text>
+    <text x="70" y="175" text-anchor="middle" class="offer-price medium"><tspan text-decoration="line-through">$400</tspan></text>
+    <text x="130" y="175" text-anchor="middle" class="offer-discount">$300</text>
+  </g>
+  
+  <!-- Limited Time Banner -->
+  <g transform="translate(400, 270)">
+    <rect x="-150" y="-15" width="300" height="30" rx="15" class="error-light" stroke="#ea4335" stroke-width="1" />
+    <text x="0" y="5" text-anchor="middle" font-size="14" class="error" font-weight="bold">LIMITED TIME OFFERS - BOOK NOW!</text>
+  </g>
+</svg>

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Hero Illustration for Hospital Website -->
+  <style>
+    .primary { fill: #1a73e8; }
+    .primary-light { fill: #e8f0fe; }
+    .secondary { fill: #34a853; }
+    .secondary-light { fill: #e6f4ea; }
+    .accent { fill: #fbbc04; }
+    .dark { fill: #202124; }
+    .medium { fill: #5f6368; }
+    .light { fill: #f8f9fa; }
+    .white { fill: #ffffff; }
+    .skin { fill: #fce8d6; }
+    .outline { fill: none; stroke: #dadce0; stroke-width: 2; }
+    .doctor-coat { fill: #ffffff; }
+    .doctor-hair { fill: #5f6368; }
+    .patient-shirt { fill: #e8f0fe; }
+  </style>
+  
+  <!-- Background Elements -->
+  <rect x="0" y="0" width="800" height="500" fill="none" />
+  
+  <!-- Hospital Building -->
+  <g transform="translate(50, 100)">
+    <!-- Main Building -->
+    <rect x="0" y="50" width="200" height="250" rx="5" class="white" stroke="#dadce0" stroke-width="2" />
+    
+    <!-- Windows -->
+    <rect x="20" y="80" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="70" y="80" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="120" y="80" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="170" y="80" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    
+    <rect x="20" y="140" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="70" y="140" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="120" y="140" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="170" y="140" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    
+    <rect x="20" y="200" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="70" y="200" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="120" y="200" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    <rect x="170" y="200" width="30" height="40" rx="2" class="primary-light" stroke="#dadce0" stroke-width="1" />
+    
+    <!-- Entrance -->
+    <rect x="70" y="250" width="60" height="50" class="primary" />
+    <rect x="85" y="260" width="30" height="40" rx="2" class="white" />
+    
+    <!-- Hospital Sign -->
+    <rect x="50" y="30" width="100" height="30" rx="5" class="primary" />
+    <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">HOSPITAL</text>
+    
+    <!-- Medical Cross -->
+    <rect x="85" y="5" width="10" height="30" rx="2" class="secondary" />
+    <rect x="75" y="15" width="30" height="10" rx="2" class="secondary" />
+  </g>
+  
+  <!-- Doctor -->
+  <g transform="translate(350, 150)">
+    <!-- Doctor Body -->
+    <path d="M60,90 L60,250 L140,250 L140,90 C140,90 130,110 100,110 C70,110 60,90 60,90 Z" class="doctor-coat" stroke="#dadce0" stroke-width="1" />
+    
+    <!-- Stethoscope -->
+    <path d="M85,130 C85,130 75,140 75,150 C75,160 85,165 85,175" stroke="#1a73e8" stroke-width="3" fill="none" />
+    <circle cx="85" cy="175" r="5" class="primary" />
+    
+    <!-- Face -->
+    <circle cx="100" cy="70" r="40" class="skin" />
+    
+    <!-- Hair -->
+    <path d="M60,70 C60,45 80,30 100,30 C120,30 140,45 140,70 C140,70 140,55 100,55 C60,55 60,70 60,70 Z" class="doctor-hair" />
+    
+    <!-- Eyes -->
+    <ellipse cx="85" cy="65" rx="5" ry="3" fill="#333" />
+    <ellipse cx="115" cy="65" rx="5" ry="3" fill="#333" />
+    
+    <!-- Smile -->
+    <path d="M85,80 C85,90 115,90 115,80" stroke="#333" stroke-width="2" fill="none" />
+    
+    <!-- Medical Cross Badge -->
+    <rect x="95" y="110" width="10" height="20" rx="1" class="primary" />
+    <rect x="90" y="115" width="20" height="10" rx="1" class="primary" />
+  </g>
+  
+  <!-- Patient -->
+  <g transform="translate(550, 180)">
+    <!-- Patient Body -->
+    <path d="M60,90 L60,220 L140,220 L140,90 C140,90 130,110 100,110 C70,110 60,90 60,90 Z" class="patient-shirt" stroke="#dadce0" stroke-width="1" />
+    
+    <!-- Face -->
+    <circle cx="100" cy="70" r="40" class="skin" />
+    
+    <!-- Hair -->
+    <path d="M60,70 C60,45 80,30 100,30 C120,30 140,45 140,70 C140,70 140,55 100,55 C60,55 60,70 60,70 Z" fill="#8d6e63" />
+    
+    <!-- Eyes -->
+    <ellipse cx="85" cy="65" rx="5" ry="3" fill="#333" />
+    <ellipse cx="115" cy="65" rx="5" ry="3" fill="#333" />
+    
+    <!-- Smile -->
+    <path d="M85,80 C85,90 115,90 115,80" stroke="#333" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Medical Elements -->
+  <g transform="translate(400, 350)">
+    <!-- Clipboard -->
+    <rect x="0" y="0" width="80" height="100" rx="5" class="white" stroke="#dadce0" stroke-width="2" />
+    <rect x="0" y="0" width="80" height="20" rx="5" class="primary" />
+    <line x1="20" y1="40" x2="60" y2="40" stroke="#dadce0" stroke-width="2" />
+    <line x1="20" y1="60" x2="60" y2="60" stroke="#dadce0" stroke-width="2" />
+    <line x1="20" y1="80" x2="60" y2="80" stroke="#dadce0" stroke-width="2" />
+  </g>
+  
+  <!-- Mobile Phone with Appointment App -->
+  <g transform="translate(550, 350)">
+    <!-- Phone -->
+    <rect x="0" y="0" width="60" height="100" rx="10" class="dark" />
+    <rect x="5" y="5" width="50" height="90" rx="5" class="white" />
+    
+    <!-- App Interface -->
+    <rect x="5" y="5" width="50" height="15" rx="5" class="primary" />
+    <text x="30" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">APPOINTMENT</text>
+    
+    <circle cx="15" cy="30" r="5" class="primary-light" />
+    <line x1="25" y1="30" x2="45" y2="30" stroke="#dadce0" stroke-width="1" />
+    
+    <circle cx="15" cy="45" r="5" class="primary-light" />
+    <line x1="25" y1="45" x2="45" y2="45" stroke="#dadce0" stroke-width="1" />
+    
+    <circle cx="15" cy="60" r="5" class="primary-light" />
+    <line x1="25" y1="60" x2="45" y2="60" stroke="#dadce0" stroke-width="1" />
+    
+    <rect x="10" y="75" width="40" height="15" rx="5" class="secondary" />
+    <text x="30" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">BOOK</text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g transform="translate(650, 100)">
+    <!-- Heart Rate Line -->
+    <path d="M0,50 L20,50 L30,20 L40,80 L50,50 L70,50" stroke="#ea4335" stroke-width="3" fill="none" />
+    
+    <!-- Medical Icons -->
+    <circle cx="100" cy="30" r="15" class="primary-light" />
+    <path d="M95,30 L105,30 M100,25 L100,35" stroke="#1a73e8" stroke-width="2" />
+    
+    <circle cx="100" cy="70" r="15" class="secondary-light" />
+    <path d="M93,70 L107,70 M100,63 L100,77" stroke="#34a853" stroke-width="2" />
+  </g>
+  
+  <!-- Floating Medical Symbols -->
+  <g transform="translate(200, 50)">
+    <circle cx="0" cy="0" r="10" class="primary-light" />
+    <path d="M-3,0 L3,0 M0,-3 L0,3" stroke="#1a73e8" stroke-width="2" />
+  </g>
+  
+  <g transform="translate(650, 400)">
+    <circle cx="0" cy="0" r="10" class="secondary-light" />
+    <path d="M-3,0 L3,0 M0,-3 L0,3" stroke="#34a853" stroke-width="2" />
+  </g>
+  
+  <g transform="translate(300, 450)">
+    <circle cx="0" cy="0" r="10" class="primary-light" />
+    <path d="M-3,0 L3,0 M0,-3 L0,3" stroke="#1a73e8" stroke-width="2" />
+  </g>
+</svg>

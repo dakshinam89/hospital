@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - Hospital Management System</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header-fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/hospital-logo.svg" alt="MediCare Hospital Logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="doctors.html" class="active">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div>
+    </header>
+
+    <!-- Doctors Hero Section -->
+    <section class="doctors-hero">
+        <div class="container">
+            <div class="doctors-hero-content">
+                <h1>Meet Our Expert Doctors</h1>
+                <p>Our team of highly qualified medical professionals is dedicated to providing you with the best healthcare services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Filter Section -->
+    <section class="doctors-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="doctorSearch" placeholder="Search doctors by name or specialty">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <label for="specialtyFilter">Filter by Specialty:</label>
+                    <select id="specialtyFilter">
+                        <option value="all">All Specialties</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="general">General Physician</option>
+                        <option value="ent">ENT</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="ophthalmology">Ophthalmology</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors List Section -->
+    <section class="doctors-list">
+        <div class="container">
+            <div class="doctors-grid" id="doctorsGrid">
+                <!-- Doctor Card 1 -->
+                <div class="doctor-card" data-specialty="cardiology">
+                    <div class="doctor-image">
+                        <img src="images/doctors/doctor-1.jpg" alt="Dr. John Smith">
+                        <div class="availability available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. John Smith</h3>
+                        <p class="specialty">Cardiology</p>
+                        <div class="experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>15+ Years Experience</span>
+                        </div>
+                        <p class="description">Specializes in heart diseases and cardiovascular health with expertise in interventional cardiology.</p>
+                        <div class="doctor-footer">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="doctor-profile.html?id=1" class="btn btn-outline">View Profile</a>
+                            <a href="appointment.html?doctor=1" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 2 -->
+                <div class="doctor-card" data-specialty="general">
+                    <div class="doctor-image">
+                        <img src="images/doctors/doctor-2.jpg" alt="Dr. Sarah Johnson">
+                        <div class="availability available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p class="specialty">General Physician</p>
+                        <div class="experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>10+ Years Experience</span>
+                        </div>
+                        <p class="description">Experienced in diagnosing and treating a wide range of health conditions and preventive care.</p>
+                        <div class="doctor-footer">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <a href="doctor-profile.html?id=2" class="btn btn-outline">View Profile</a>
+                            <a href="appointment.html?doctor=2" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 3 -->
+                <div class="doctor-card" data-specialty="ent">
+                    <div class="doctor-image">
+                        <img src="images/doctors/doctor-3.jpg" alt="Dr. Michael Chen">
+                        <div class="availability not-available">
+                            <span>Not Available</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Chen</h3>
+                        <p class="specialty">ENT Specialist</p>
+                        <div class="experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>12+ Years Experience</span>
+                        </div>
+                        <p class="description">Expert in treating conditions related to ear, nose, and throat with a focus on pediatric ENT care.</p>
+                        <div class="doctor-footer">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.2</span>
+                            </div>
+                            <a href="doctor-profile.html?id=3" class="btn btn-outline">View Profile</a>
+                            <a href="appointment.html?doctor=3" class="btn btn-primary disabled">Currently Unavailable</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 4 -->
+                <div class="doctor-card" data-specialty="neurology">
+                    <div class="doctor-image">
+                        <img src="images/doctors/doctor-4.jpg" alt="Dr. Emily Rodriguez">
+                        <div class="availability available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Emily Rodriguez</h3>
+                        <p class="specialty">Neurology</p>
+                        <div class="experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>8+ Years Experience</span>
+                        </div>
+                        <p class="description">Specializes in neurological disorders and brain health with expertise in stroke management.</p>
+                        <div class="doctor-footer">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="doctor-profile.html?id=4" class="btn btn-outline">View Profile</a>
+                            <a href="appointment.html?doctor=4" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 5 -->
+                <div class="doctor-card" data-specialty="orthopedics">
+                    <div class="doctor-image">
+                        <img src="images/doctors/doctor-5.jpg" alt="Dr. Robert Williams">
+                        <div class="availability available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Robert Williams</h3>
+                        <p class="specialty">Orthopedics</p>
+                        <div class="experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>14+ Years Experience</span>
+                        </div>
+                        <p class="description">Expert in bone and joint conditions with specialization in sports medicine and joint replacements.</p>
+                        <div class="doctor-footer">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.3</span>
+                            </div>
+                            <a href="doctor-profile.html?id=5" class="btn btn-outline">View Profile</a>
+                            <a href="appointment.html?doctor=5" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Card 6 -->
+                <div class="doctor-card" data-specialty="ophthalmology">
+                    <div class="doctor-image">
+                        <img src="images/doctors/doctor-6.jpg" alt="Dr. Priya Patel">
+                        <div class="availability available">
+                            <span>Available</span>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Priya Patel</h3>
+                        <p class="specialty">Ophthalmology</p>
+                        <div class="experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>9+ Years Experience</span>
+                        </div>
+                        <p class="description">Specializes in eye care and vision health with expertise in cataract surgery and glaucoma treatment.</p>
+                        <div class="doctor-footer">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.9</span>
+                            </div>
+                            <a href="doctor-profile.html?id=6" class="btn btn-outline">View Profile</a>
+                            <a href="appointment.html?doctor=6" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No doctors found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team Section -->
+    <section class="join-team">
+        <div class="container">
+            <div class="join-team-content">
+                <h2>Join Our Medical Team</h2>
+                <p>We're always looking for talented and passionate medical professionals to join our team</p>
+                <a href="careers.html" class="btn btn-primary">View Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="images/hospital-logo.svg" alt="Hospital Logo">
+                        <h2>MediCare</h2>
+                    </div>
+                    <p>Providing quality healthcare services for over 20 years.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healthcare Ave, Medical District</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@medicare.com</li>
+                    </ul>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573036704!2d-73.98784492426285!3d40.75798657138946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzI4LjgiTiA3M8KwNTknMTIuMCJX!5e0!3m2!1sen!2sus!4v1628000000000!5m2!1sen!2sus" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MediCare Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/doctors.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
